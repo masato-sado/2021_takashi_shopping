@@ -1,0 +1,113 @@
+@import "_setting";
+a {
+  text-decoration: none;
+  @include sp_md {
+    font-size: 14px;
+  }
+}
+.title_h2 {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  @include pc {
+    margin: 50px 0 30px 0;
+  }
+  @include sp {
+    margin: 30px 0 20px 0;
+  }
+}
+.sado_icon {
+  margin: -15px 15px 0 0;
+  @include sp_md {
+    margin: -10px 8px 0 0;
+  }
+}
+h2 {
+  color: $main_text_color;
+  font-size: 180%;
+  font-weight: bold;
+  @include sp_md {
+    font-size: 130%;
+  }
+  @include sp_small {
+    font-size: 120%;
+  }
+}
+h3 {
+  color: $main_text_color;
+  font-size: 150%;
+  font-weight: bold;
+  margin-bottom: 20px;
+  @include sp {
+    font-size: 120%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  @include sp_small {
+    font-size: 100%;
+  }
+}
+p {
+  font-size: 120%;
+  color: $main_text_color;
+  @include sp_md {
+    font-size: 100%;
+  }
+}
+p + p {
+  margin: 10px 0;
+}
+a {
+  color: $main_text_color;
+}
+a:hover {
+  color: rgb(58, 165, 228);
+  transition: 0.3s;
+}
+section {
+  margin: 100px 0 100px 0;
+  
+  @include sp {
+    margin: 50px 0 60px 0;
+  }
+  @include sp_md {
+    margin: 40px 0 40px 0;
+  }
+}
+.cont_flex {
+  display: flex;
+  @include sp {
+    display: block;
+  }
+}
+.cont_flex_first {
+  display: flex;
+  @include sp {
+    display: flex;
+    flex-direction: column-reverse;
+  } 
+}
+.bold_orange {
+  font-weight: bold;
+  color: #b9850b;
+}
+.bold_orange_ander {
+  font-weight: bold;
+  border-bottom: 2px solid #b9850b;
+}
+.bold_green {
+  font-weight: bold;
+  color: $main_text_color;
+}
+.item_margin {
+  margin: 0 40px;
+}
+.text_center {
+  text-align: center;
+}
+.margin_left_5 {
+  margin-left: 5%;
+  @include sp {
+    margin-left: 0;
+  }
+}
